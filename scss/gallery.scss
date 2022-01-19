@@ -1,0 +1,48 @@
+@forward "./utils/animations";
+@use "./utils/mixins" as mix;
+
+.gallery-content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    max-width: 400px;
+    .gallery__img {
+        width: 80%;
+        position: relative;
+        min-height: 50vh;
+        max-height: 400px;
+        border: 1px solid black;
+        img {
+            width: 100%;
+            position: absolute;
+            transition: 1s ease-out;
+            transform-origin: right;
+            &.active-prev {
+                animation: prevImg 1s ease-in forwards;
+            }
+            &.active-next {
+                animation: nextImg 1s ease-in forwards;
+            }
+            &.appear {
+                animation: appear 1s ease-in forwards;
+            }
+            &.disappear {
+                animation: disappear 1s ease-in forwards;
+            }
+        }
+        .diffuss_layer {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: -100%;
+            @include mix.gradient;
+        }
+    }
+    .gallery__btn {
+        margin: auto;
+        button {
+            background-color: white;
+        }
+    }
+}
