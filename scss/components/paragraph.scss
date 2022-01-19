@@ -1,0 +1,33 @@
+.info-content {
+    display: block;
+    width: 66%;
+    z-index: 2;
+    .testimonial {
+        width: 90%;
+        .info-paragraph {
+            width: 100%;
+            font-family: "Inter", sans-serif;
+            color: hsl(240, 38%, 20%);
+            font-size: clamp(1rem, 3vw, 2rem);
+            font-weight: 300;
+            transform: translateY(8%) translateX(-1%);
+            line-height: 1.4;
+        }
+        h1, h2 {
+            font-family: "Inter", sans-serif;
+            color: hsl(240, 38%, 20%);
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-top: 3em;
+            span {
+                color: hsl(240, 18%, 77%);
+            }
+        }
+        &.appear {
+            display: block;
+            animation: appearParagraph 500ms ease-in forwards;
+        }
+        &.disappear {
+            display: none;
+        }
+    }
+}
