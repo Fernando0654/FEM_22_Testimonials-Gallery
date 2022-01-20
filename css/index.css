@@ -237,6 +237,7 @@ footer img {
   .info-content {
     width: 95%;
     margin: auto;
+    margin-bottom: 5em;
   }
   .info-content .testimonial {
     width: 95%;
