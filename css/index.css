@@ -37,6 +37,10 @@ main {
   z-index: -2;
 }
 
+footer {
+  width: 100%;
+}
+
 footer img {
   width: 100%;
   max-width: 500px;
@@ -55,6 +59,7 @@ footer img {
     position: inherit;
     transform: inherit;
     flex-flow: column-reverse;
+    overflow: hidden;
   }
 
   .pattern_bg {
@@ -152,20 +157,6 @@ footer img {
 }
 .gallery-content .gallery__img img.disappear {
   animation: disappear 1s ease-in forwards;
-}
-.gallery-content .gallery__img .diffuss_layer {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  right: -100%;
-  background: white;
-  background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0.4429971818) 0%, rgba(255, 255, 255, 0.7791316356) 35%, white 100%);
-  background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0.4429971818) 0%, rgba(255, 255, 255, 0.7791316356) 35%, white 100%);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4429971818) 0%, rgba(255, 255, 255, 0.7791316356) 35%, white 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-  opacity: 0;
-  transition: 1.5s ease;
 }
 .gallery-content .gallery__btn {
   display: flex;

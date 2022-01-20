@@ -33,16 +33,6 @@
                 animation: disappear 1s ease-in forwards;
             }
         }
-        .diffuss_layer {
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            right: -100%;
-            @include mix.gradient;
-            opacity: 0;
-            transition: 1.5s ease;
-        }
     }
     .gallery__btn {
         display: flex;

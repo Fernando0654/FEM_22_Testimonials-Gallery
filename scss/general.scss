@@ -34,6 +34,10 @@ main {
     z-index: -2;
 }
 
+footer {
+    width: 100%;
+}
+
 footer img {
     width: 100%;
     max-width: 500px;
@@ -49,6 +53,7 @@ footer img {
         position: inherit;
         transform: inherit;
         flex-flow: column-reverse;
+        overflow: hidden;
     }
     .pattern_bg {
         width: 100%;
