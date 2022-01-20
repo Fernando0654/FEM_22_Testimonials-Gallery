@@ -2,6 +2,7 @@ const previewBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
 const gallery = document.querySelector(".gallery__img");
 const paragraph = document.querySelector(".info-content");
+const layerGradient = document.querySelector(".diffuss_layer");
 let counter = 0;
 
 const prev = () => {
@@ -13,6 +14,7 @@ const prev = () => {
     gallery.children[0].classList.add("disappear");
     paragraph.children[0].classList.add("appear");
     paragraph.children[1].classList.add("disappear");
+    layerGradient.style.opacity = "0";
     gallery.children[1].classList = "active-prev";
 }
 
@@ -25,6 +27,7 @@ const next = () => {
     gallery.children[0].classList.add("appear");
     paragraph.children[1].classList.add("appear");
     paragraph.children[0].classList.add("disappear");
+    layerGradient.style.opacity = "1";
     gallery.children[1].classList = "active-next";
 }
 

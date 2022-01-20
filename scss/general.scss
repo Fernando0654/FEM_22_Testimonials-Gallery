@@ -31,4 +31,40 @@ main {
 .pattern_bg {
     right: -6em;
     bottom: -8.2em;
+    z-index: -2;
+}
+
+footer img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    main {
+        @include mix.flex(column, center);
+        position: inherit;
+        transform: inherit;
+        flex-flow: column-reverse;
+    }
+    .pattern_bg {
+        width: 100%;
+        top: 0em;
+        left: 0;
+        max-width: 800px;
+    }
+    .quotes {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        max-width: 100px;
+        width: 20%;
+        position: absolute;
+        left: 35%;
+        top: -1em;
+    }
 }

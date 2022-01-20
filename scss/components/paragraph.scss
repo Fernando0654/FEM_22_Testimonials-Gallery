@@ -31,3 +31,25 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .info-content {
+        width: 95%;
+        margin: auto;
+        .testimonial {
+            width: 95%;
+            margin: auto;
+            margin-top: 7em;
+            position: relative;
+            .info-paragraph {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            h1, h2 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+}
